@@ -1,0 +1,107 @@
+.ModalStructure{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.GeneralInfos div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+}
+
+.TeamDisplayContainer{
+    display: flex;
+    flex-direction: row;
+}
+
+.TeamDisplay{
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+    border:5px solid rgb(74, 110, 209);
+}
+
+.TeamDisplay div{
+    text-align: center;
+    margin-bottom: 1px;
+}
+
+.TeamGeneralInfos{
+    padding: 1px;
+}
+
+.Joueurs{
+    padding-bottom: 5px;
+}
+
+.joueur{
+    padding-bottom: 5px;
+}
+
+.Title{
+    font-weight: bold;
+    text-decoration: underline;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.EventContainer{
+
+}
+
+.EventTypeContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.EventTypeContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.but{
+    border:1px solid rgb(24, 129, 38);
+    padding: 2px;
+}
+
+.changement{
+    border:1px solid rgb(37, 56, 107);
+    padding: 2px;
+}
+
+.faute{
+    border:1px solid rgb(116, 19, 24);
+    padding: 2px;
+}
+
+.show{
+    display: flex;
+}
+
+.noShow{
+    display: none;
+}
+
+#CartonsDeplieur{
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+#ChangementsDeplieur{
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+#ButsDeplieur{
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+}

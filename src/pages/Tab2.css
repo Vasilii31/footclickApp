@@ -1,0 +1,9 @@
+
+.Match{   
+     --ion-background-color:#d6d1d1;
+}
+
+.vignetteMatch{
+    display: flex;
+    justify-content: space-between;
+}

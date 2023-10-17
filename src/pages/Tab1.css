@@ -1,0 +1,22 @@
+.Page1Body{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.Welcome{
+    margin-top: 60px;
+    width: 80%;
+    margin-left: 10px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 200%;
+    font-weight: bolder;
+    color: #3880ff;
+}
+
+.Guide{
+    margin-top:60px;
+    width: 80%;
+    margin-left: 15px;
+    font-weight: bolder;
+}
