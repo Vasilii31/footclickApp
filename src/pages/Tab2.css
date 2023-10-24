@@ -1,9 +1,19 @@
 
 .Match{   
      --ion-background-color:#d6d1d1;
+     padding-bottom: 5px;
 }
 
 .vignetteMatch{
     display: flex;
     justify-content: space-between;
+}
+
+.MatchesPage{
+    --ion-background-color:#7786ccab;
+}
+
+#Modal{
+    --ion-background-color:#7786ccab;
+    --ion-font-family: 'Roboto', Georgia, Helvetica;
 }

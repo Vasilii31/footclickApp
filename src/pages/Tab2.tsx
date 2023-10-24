@@ -58,7 +58,7 @@ const Tab2: React.FC = () => {
           <IonTitle>Matchs</IonTitle>
         </IonToolbar>
       </IonHeader>
-      <IonContent fullscreen>
+      <IonContent className='MatchesPage' fullscreen>
         <IonHeader collapse="condense">
           <IonToolbar>
             <IonTitle size="large">Matchs</IonTitle>
@@ -93,7 +93,7 @@ const Tab2: React.FC = () => {
                 </IonButtons>
               </IonToolbar>
             </IonHeader>
-            <IonContent className="ion-padding">
+            <IonContent id='Modal' className="ion-padding">
                   {isPending && <div>Chargement...</div>}
                   {(matchSelected != "" && !isPending) && <MatchDetails {...DetailsMatch as MatchDetailsProps} />}
             </IonContent>

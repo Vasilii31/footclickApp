@@ -20,7 +20,9 @@
     display: flex;
     flex-direction: column;
     font-size: 15px;
-    border:5px solid rgb(74, 110, 209);
+    border:5px solid rgb(145, 137, 26);
+    border-radius: 5%;
+    background-color: beige;
 }
 
 .TeamDisplay div{
@@ -38,6 +40,9 @@
 
 .joueur{
     padding-bottom: 5px;
+    background-color:#7786cc54;
+    border-radius: 10%;
+    border: solid 1px black;
 }
 
 .Title{
@@ -48,14 +53,14 @@
     text-align: center;
 }
 
-.EventContainer{
-
-}
-
-.EventTypeContainer{
+.EventsContainer{
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.EventTypeContainer{
+    
 }
 
 .EventTypeContainer{
@@ -63,9 +68,19 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
+    font-size: 18px;
+    border:5px solid rgb(145, 137, 26);
+    border-radius: 5%;
+    background-color: beige;
+    width: 100%;
 }
 
+
+
 .but{
+    width: 100%;
+    border-radius: 10%;
+    border: solid 1px black;
     border:1px solid rgb(24, 129, 38);
     padding: 2px;
 }
@@ -73,6 +88,7 @@
 .changement{
     border:1px solid rgb(37, 56, 107);
     padding: 2px;
+    width: 100%;
 }
 
 .faute{

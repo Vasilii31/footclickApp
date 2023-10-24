@@ -7,7 +7,7 @@ const TeamDetails: React.FC<MatchDetailsProps> = (MatchDetailsProps) => {
         return(<div>Chargement...</div>);   
     return (<><div className="ModalStructure">
     <div className="GeneralInfos">
-        <div>{MatchDetailsProps.vainqueur + ' vs ' + MatchDetailsProps.perdant}</div>
+        <div className="title">{MatchDetailsProps.vainqueur + ' vs ' + MatchDetailsProps.perdant}</div>
         <div>{MatchDetailsProps.dateRencontre.toString().substring(8, 10) + '/'+ MatchDetailsProps.dateRencontre.toString().substring(5, 7) + '/' + MatchDetailsProps.dateRencontre.toString().substring(0, 4)}</div>
         <div>{MatchDetailsProps.stade}</div>
         <div>Résultat : {MatchDetailsProps.scoreEquipeGagnante + ' - ' + MatchDetailsProps.scoreEquipePerdante}</div>
@@ -70,8 +70,8 @@ const TeamDetails: React.FC<MatchDetailsProps> = (MatchDetailsProps) => {
             document.getElementById("ChangementsDeplieur")?.setAttribute("style", "display: flex;");}}>
             {MatchDetailsProps.changements.map((changement:changementsProps) => 
                 <div key={changement.idChangement} className="changement">
-                    <div>{' - Sortie de ' + changement.joueurSortant + '.'}</div>
-                    <div>{'remplacé par ' + changement.joueurEntrant + '.'}</div>
+                    <div>{' - Sortie de ' + changement.joueurSortant }</div>
+                    <div>{'remplacé par ' + changement.joueurEntrant }</div>
                     <div>à la {changement.minute}ème minute.</div>
                 </div>)}
         </div>

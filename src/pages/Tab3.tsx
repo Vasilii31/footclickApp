@@ -53,13 +53,13 @@ const Tab3: React.FC = () => {
    [season]);
 
   return (
-    <IonPage>
+    <IonPage >
       <IonHeader>
         <IonToolbar>
           <IonTitle>Equipes</IonTitle>
         </IonToolbar>
       </IonHeader>
-      <IonContent fullscreen>
+      <IonContent className='EquipesPage' fullscreen>
         <IonHeader collapse="condense">
           <IonToolbar>
             <IonTitle size="large">Equipes</IonTitle>
@@ -76,14 +76,14 @@ const Tab3: React.FC = () => {
               setNomEquipeSelected(equipe.NomEquipe);
               setShowModal(true);}}>
               <IonItem key={'item' + equipe.IdEquipe}>
-                <IonLabel key={equipe.IdEquipe}>
+                <IonLabel className="LabelEquipe" key={equipe.IdEquipe}>
                     {equipe.NomEquipe}
                 </IonLabel>
               </IonItem>
             </div>)
           }
         </IonList>
-        <IonModal ref={modal} isOpen={showModal}>
+        <IonModal ref={modal} isOpen={showModal} >
           <IonHeader>
               <IonToolbar>
                 <IonTitle>{nomEquipeSelected && nomEquipeSelected}</IonTitle>
@@ -92,7 +92,7 @@ const Tab3: React.FC = () => {
                 </IonButtons>
               </IonToolbar>
             </IonHeader>
-            <IonContent className="ion-padding">
+            <IonContent id='Modal' className="ion-padding">
                 <IonSelect onIonChange={(e) => {setSeason(e.detail.value!);}} label="Saison :" placeholder="AAAA">
                   <IonSelectOption value="2020">2020</IonSelectOption>
                   <IonSelectOption value="2021">2021</IonSelectOption>
